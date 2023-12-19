@@ -45,6 +45,17 @@ PHPUnit can be executed from the command line or integrated into build processes
 - .\vendor\bin\phpunit tests --filter=StudentTest::test_student
 - .\vendor\bin\phpunit --filter test_student .\tests\StudentTest.php
 
+# Generating phpunit.xml configuration file
+PHPUnit allows you to generate a default phpunit.xml configuration file using the --generate-configuration option. This command creates a basic configuration file with default settings and comments explaining each section. Here's how you can generate a phpunit.xml file:
+
+## - ./vendor/bin/phpunit --generate-configuration
+
+# Running testsuite
+## - All test cases in a suite
+    -./vendor/bin/phpunit --testsuite=app
+## - Particular test case in a suite
+    -./vendor/bin/phpunit --testsuite=app --filter=test_student
+    
 # Regenerate autoload file 
 Regenerate autoload file when there are changes to the project's class structure or when new dependencies are added. 
 - composer dump-autoload

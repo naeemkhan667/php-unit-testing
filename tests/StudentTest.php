@@ -6,7 +6,9 @@ use Naeem\PHPTesting\Student;
 use PHPUnit\Framework\TestCase;
 
 final class StudentTest extends TestCase {
-
+    /**
+     * @covers \test_student
+     */
     public function test_student() {
 
         $std = new Student('Naeem', 112);
@@ -15,6 +17,9 @@ final class StudentTest extends TestCase {
         $this->assertEmpty($std->subjects);
     }
 
+    /**
+     * @covers \test_user_add_subject
+     */
     public function test_user_add_subject(){
         $std = new Student('Naeem', 112);
         $this->assertTrue($std->addSubject('Maths'));
@@ -22,6 +27,9 @@ final class StudentTest extends TestCase {
         $this->assertContains('Maths', $std->subjects);
     }
 
+    /**
+     * @covers \test_user_add_remove_subject
+     */
     public function test_user_add_remove_subject(){
         $std = new Student('Naeem', 112);
         $this->assertTrue($std->addSubject('Maths'));
