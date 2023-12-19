@@ -15,7 +15,14 @@
          verbose="true">
     <testsuites>
         <testsuite name="app">
+            <directory>tests\StudentTest.php</directory>
+        </testsuite>
+        <testsuite name="custom">
+            <directory>tests\CustomTest.php</directory>
+        </testsuite>
+        <testsuite name="only_app">
             <directory>tests</directory>
+            <exclude>tests\CustomTest.php</exclude>
         </testsuite>
     </testsuites>
 

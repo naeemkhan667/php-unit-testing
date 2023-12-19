@@ -1,1 +1,0 @@
-{"version":1,"defects":{"StudentTest::test_student":5,"StudentTest::test_user_add_subject":5,"StudentTest::test_user_add_remove_subject":5},"times":{"StudentTest::test_student":0.006,"StudentTest::test_user_add_subject":0.001,"StudentTest::test_user_add_remove_subject":0.002,"CustomTest::test_student":0}}
