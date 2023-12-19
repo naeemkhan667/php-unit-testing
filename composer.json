@@ -1,0 +1,17 @@
+{
+    "name": "naeem/phptesting",
+    "autoload": {
+        "psr-4": {
+            "Naeem\\PHPTesting\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Naeem Ullah Khan",
+            "email": "naeemkhan667@yahoo.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}
