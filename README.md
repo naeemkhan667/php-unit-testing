@@ -31,10 +31,19 @@ PHPUnit can be executed from the command line or integrated into build processes
 ## Create a folder tests fro writing test cases
 - Create folder named Tests and 
 - Create StudentTest.php
-- Write test cases prefix with test
+- Write test cases prefix with 
 
-## Runnign test cases
+# Runnign test cases
+
+## Run all test cases
 - .\vendor\bin\phpunit tests 
+
+## Run particular class tests
+- .\vendor\bin\phpunit  .\tests\StudentTest.php
+
+## Run particular test case amoung test cases
+- .\vendor\bin\phpunit tests --filter=StudentTest::test_student
+- .\vendor\bin\phpunit --filter test_student .\tests\StudentTest.php
 
 # Regenerate autoload file 
 Regenerate autoload file when there are changes to the project's class structure or when new dependencies are added. 
